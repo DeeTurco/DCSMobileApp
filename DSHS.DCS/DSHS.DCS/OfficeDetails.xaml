@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+						 xmlns:local="clr-namespace:DSHS.DCS;assembly=DSHS.DCS"
+						 Title="Office Details"
+             x:Class="DSHS.DCS.OfficeDetails">
+
+
+	 <ScrollView>
+			<StackLayout Spacing="10">
+				 <StackLayout.Padding>
+						<OnPlatform x:TypeArguments="Thickness" iOS="5,20,5,5" Android="5,0,5,5" WinPhone="5,0,5,5" />
+				 </StackLayout.Padding>
+
+				
+				 <Label Text="{Binding OfficeCity}" FontSize="Medium" FontAttributes="Bold" TextColor="White" />
+				 <Label x:Name="lblPhone" Text="{Binding OfficeCityPhone}" FontSize="Small" FontAttributes="Italic" TextColor="Aqua" />
+				 <Label x:Name="lblPhoneTDD" Text="{Binding OfficeCityPhoneTDD, StringFormat='TDD: {0}'}" FontSize="Small" FontAttributes="Italic" TextColor="Aqua" />
+				 <Label Text="Physical Address" FontAttributes="Bold" TextColor="White" />				
+				 <Label Text="{Binding OfficeHours}" />				
+				 <Label x:Name="lblPhysicalAddress" Text="{Binding PhysicalAddress}" FontSize="Small" FontAttributes="Italic" TextColor="Aqua" />				 
+				 <Label x:Name="lblPhysicalAddressCityStateZip" Text="{Binding PhysicalAddressCityStateZip}" FontSize="Small" FontAttributes="Italic" TextColor="Aqua" />
+				 <Label Text="Email" FontAttributes="Bold" TextColor="White" />
+				 <Label Text="{Binding Email}" FontSize="Small" FontAttributes="Italic" TextColor="Aqua" />
+				 <Label Text="Phone" FontAttributes="Bold" TextColor="White"/>
+				 <Label Text="{Binding Phone}" FontSize="Small" FontAttributes="Italic" TextColor="Aqua"/>
+				 <Label Text="{Binding Phone1800}" FontSize="Small" FontAttributes="Italic" TextColor="Aqua"/>
+				 <Label Text="Fax" FontAttributes="Bold" TextColor="White" />
+				 <Label Text="{Binding Fax}" />				 
+				 <Label Text="Where should you sent documents?" FontAttributes="Bold" TextColor="White" />				 
+				 <Label Text="{Binding DCS}" />				
+				 <Label Text="{Binding DocAddress}" />				
+				 <Label Text="{Binding DocAddressCityStateZip}" />
+				 <Label Text="District Manager" FontAttributes="Bold" TextColor="White" />
+				 <Label Text="{Binding DocDistrictManager}" />
+
+			</StackLayout>
+	 </ScrollView>
+
+</ContentPage>

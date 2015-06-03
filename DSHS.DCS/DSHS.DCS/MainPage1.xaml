@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NavigationPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DSHS.DCS.MainPage">
+
+	 <x:Arguments>
+			<Page>
+				 <ScrollView>
+						<StackLayout Orientation="Vertical" VerticalOptions="Center">
+							 <StackLayout.BackgroundColor>
+									<OnPlatform x:TypeArguments="Color" iOS="White" Android="White" WinPhone="White" />
+							 </StackLayout.BackgroundColor>
+
+							 <Button Text="Contact Us" VerticalOptions="Center" FontSize="Small"
+											 BackgroundColor="#3075AE" TextColor="White"
+											 Font="20" BorderRadius="0" Clicked="btnContactUs"  />
+
+							 <Button Text="Event Calendar" VerticalOptions="Center" FontSize="Small"
+											 BackgroundColor="#3075AE" TextColor="White"
+											 Font="20" BorderRadius="0" Clicked="btnEventCalendar"  />
+
+							 <Button Text="Child Support Quick Estimator" VerticalOptions="Center" FontSize="Small"
+														 BackgroundColor="#3075AE" TextColor="White"
+														 Font="20" BorderRadius="0" Clicked="btnEstimator"  />
+
+							 <Button Text="Find ESA Office " VerticalOptions="Center" FontSize="Small"
+											 BackgroundColor="#3075AE" TextColor="White"
+											 Font="20" BorderRadius="0" Clicked="btnFindOffice"  />
+
+						</StackLayout>
+				 </ScrollView>
+			</Page>
+	 </x:Arguments>
+	
+	 
+	 
+</NavigationPage>

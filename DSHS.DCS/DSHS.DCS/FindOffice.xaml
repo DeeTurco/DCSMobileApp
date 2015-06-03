@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DSHS.DCS.FindOffice">
+
+	 <StackLayout x:Name="test" Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+			<StackLayout.BackgroundColor>
+				 <OnPlatform x:TypeArguments="Color" iOS="White" Android="White" WinPhone="White" />
+			</StackLayout.BackgroundColor>
+
+			<Button Text="Use My Current Location" VerticalOptions="Center" FontSize="Small"
+							BackgroundColor="#3075AE" TextColor="White" BorderWidth="1" 
+							Font="20" BorderRadius="0" Clicked="btnCurrentLocation"  />
+
+
+			<Label x:Name="lblAddress" Font="15" BackgroundColor="White" Text="Find child support office near you"
+										TextColor="Black" LineBreakMode="NoWrap"  />
+			
+			<!--<Entry x:Name="txtAddress" Placeholder="Enter city" 
+						 BackgroundColor="#f5f8ff" TextColor="Black" />-->
+			
+			<Picker x:Name="pickerAddress" SelectedIndex="{Binding Address}" HorizontalOptions="FillAndExpand" 
+							BackgroundColor="#1F552A">
+				 <Picker.Items>
+						<x:String>Everett</x:String>
+						<x:String>Kennewick</x:String>
+						<x:String>Olympia</x:String>
+						<x:String>Seattle</x:String>
+						<x:String>Spokane</x:String>
+						<x:String>Tacoma</x:String>
+						<x:String>Vancouver</x:String>
+						<x:String>Wenatchee</x:String>
+						<x:String>Yakima</x:String>
+				 </Picker.Items>
+			</Picker>
+			<Button Text="Apply" VerticalOptions="Center" FontSize="Small"
+							BackgroundColor="#3075AE" TextColor="White" BorderWidth="1"
+							Font="20" BorderRadius="0" Clicked="btnSearch"  />
+	 </StackLayout>
+	 
+</ContentPage>
