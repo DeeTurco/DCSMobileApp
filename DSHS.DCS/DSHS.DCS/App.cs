@@ -13,7 +13,7 @@ namespace DSHS.DCS
 	  {
 		 // The root page of your application
 		 MainPage = new NavigationPage(new Main());		 		 
-		 
+		  
         }
 
 	  protected override void OnStart()
